@@ -1,0 +1,14 @@
+<html>
+{% if grains['fqdn'] == 'saltminion1' %}
+<body bgcolor="#FFFF00">
+{% elif grains['fqdn'] == 'saltminion2' %}
+<body bgcolor="#00FF00">
+{% endif %}
+{% set var='somevalue' %}
+{% for i in [1,2,3] %}
+<center><h1>{{ var }}</h1></center>
+{% endfor %}
+</body>
+</html>
+
+
